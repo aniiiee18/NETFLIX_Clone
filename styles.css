@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+} */
+/* #wrapper
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing:border-box
+    
+} */
+.main-section
+{
+    background-image:  linear-gradient(to bottom, black , transparent 90%),linear-gradient(to top, black , transparent 90%),url(images/1st\ page.jpg);
+}
+.ans{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 600ms ease-in-out;
+}
+.faq.active .ans{
+    max-height: 300px;
+}
+.afterfaq
+{
+    height: 800px;
+}
+.afterfaq.faq.active
+{
+    max-height: 900px;
+}
